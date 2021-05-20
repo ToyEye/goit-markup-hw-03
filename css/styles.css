@@ -1,10 +1,21 @@
+
+/* Глобальные стили */
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: var(--accent-color);
   font-family: roboto, sans-serif;
   background-color: #ffffff;
 }
 
-/* Глобальные стили */
+
 
 :root {
   --accent-color: #757575;
@@ -20,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -29,6 +40,29 @@ li {
 }
 
 /* HEADER INDEX*/
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .site-nav {
+  display: flex;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -56,6 +90,29 @@ li {
   line-height: 1.1;
 }
 
+.contact-info .contact {
+  display: flex;
+}
+
+.contact-info {
+  margin-left: auto;
+}
+
+
+.site-nav .item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 50px;
+}
+
+.site-nav .item:first-child{
+  margin-left: 93px;
+}
+
+.site-nav .item:last-child{
+  margin: 0;
+}
+
 .site-nav .link:focus,
 .site-nav .link:hover {
   color: var(--activ);
@@ -66,10 +123,19 @@ li {
   color: var(--activ);
 }
 
+.site-nav .current{
+  color: var(--activ);
+}
+
+.contact .item + .item {
+margin-left: 50px;
+}
+
 /* main INDEX */
 
 .hero {
   background-color: var(--background-header-footer);
+  text-align: center;
 }
 
 .hero .title {
@@ -77,7 +143,7 @@ li {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.35;
-  text-align: center;
+  
 }
 
 .hero .btn {
@@ -90,12 +156,30 @@ li {
   letter-spacing: 0.06em;
 }
 
-/* .hero .btn:focus,
+.hero .btn:focus,
 .hero .btn:hover {
-  color:
-} */
+  background-color:#188CE8;
+  ;
+}
 
 /* ABOUT INDEX */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.about .item {  
+  flex-basis: calc((100%-3*30)/4);
+  padding-right: 30px;
+  margin-top: 94px;
+}
+
+.about .item:last-child{
+  padding-right: 0;
+}
 
 .about .title {
   color: var(--primary-color);
