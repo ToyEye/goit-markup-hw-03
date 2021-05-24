@@ -9,7 +9,8 @@ h3,
 h4,
 h5,
 h6,
-ul {
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -279,6 +280,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .cards {
@@ -311,6 +314,7 @@ ul {
   color: rgba(33, 33, 33, 1);
   padding: 6px 22px;
   background-color: var(--bgc-btn);
+  border: none;
 }
 
 .buttons .item {
@@ -370,16 +374,23 @@ ul {
   border-bottom: 1px solid var(--cards-border-color);
   padding-top: 20px;
   padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 /* Подвал */
 
 .footer {
   background-color: var(--background-header-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .web {
   color: var(--lite-color);
+}
+
+.footer .logo {
+  margin-top: 60px;
 }
 
 .footer .link {
@@ -396,6 +407,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+  padding-top: 20px;
 }
 
 .address .street {
@@ -403,6 +415,10 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
+}
+
+.getcontact li {
+  padding-top: 9px;
 }
 
 .address .link {
